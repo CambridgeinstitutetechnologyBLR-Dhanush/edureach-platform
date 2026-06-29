@@ -36,10 +36,8 @@ export const startVoiceConversation = async (
   };
 
   await speak(
-    `Hello ${name}. I am Ava from EduReach College.
-    I can answer your questions about ${course}.
-    Please ask your question.`
-  );
+  `Hello ${name}. I can help you with ${course}. I understand your topic is ${topic}. Please ask your question.`
+);
 
   recognition.onresult = async (event: any) => {
     const transcript =
