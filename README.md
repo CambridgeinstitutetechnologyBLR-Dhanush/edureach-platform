@@ -1,23 +1,126 @@
-# 🎓 EduReach – AI-Powered College Admission Assistant
+# 🎓 EduReach – AI-Powered College Intelligence Platform
 
-EduReach is an AI-powered college counseling platform that helps prospective students explore courses, admissions, placements, fees, scholarships, and campus life through an intelligent chatbot and AI voice assistant.
-
-The project combines **React**, **Node.js**, **MongoDB Atlas Vector Search**, **LangChain**, **Google Gemini**, and **Vapi AI** to deliver an interactive admission guidance experience.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-blue?logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/Node.js-24-green?logo=node.js" />
+  <img src="https://img.shields.io/badge/Express.js-Backend-black?logo=express" />
+  <img src="https://img.shields.io/badge/MongoDB-Atlas-green?logo=mongodb" />
+  <img src="https://img.shields.io/badge/Gemini-AI-orange?logo=google" />
+  <img src="https://img.shields.io/badge/Vapi-AI%20Voice-purple" />
+  <img src="https://img.shields.io/badge/Vercel-Frontend-black?logo=vercel" />
+  <img src="https://img.shields.io/badge/Render-Backend-blue?logo=render" />
+</p>
 
 ---
 
-# 🚀 Features
+## 📖 Overview
 
-* 🔐 JWT Authentication (Login & Registration)
-* 🤖 AI Chatbot using Google Gemini
-* 📚 RAG (Retrieval-Augmented Generation) with MongoDB Atlas Vector Search
-* 🎙️ AI Voice Counselor using Vapi
-* 📖 Knowledge Base powered by LangChain
-* 🏫 College Information Portal
-* 📊 Placement & Recruitment Information
-* 🎓 Course & Admission Guidance
-* 📱 Responsive Modern UI
-* ☁️ Cloud Deployment using Render & Vercel
+EduReach is an **AI-powered college information platform** that helps students learn about admissions, courses, placements, campus life, scholarships, and more through an intelligent chatbot and AI voice counselor.
+
+Instead of browsing multiple webpages, students can simply ask questions in natural language or request an AI-powered phone call.
+
+---
+
+# 🚀 Live Demo
+
+### Frontend
+
+(Add your Vercel URL here)
+
+Example:
+
+```
+https://edureach-platform-xxxxx.vercel.app
+```
+
+### Backend API
+
+```
+https://edureach-platform-kml4.onrender.com
+```
+
+---
+
+# ✨ Features
+
+### 🤖 AI Chatbot
+
+- Natural language conversation
+- College information retrieval
+- Course guidance
+- Placement details
+- Admission support
+- Scholarship information
+
+---
+
+### 📞 AI Voice Counselor
+
+Powered by **Vapi AI**
+
+- AI phone calls
+- Personalized conversations
+- Course counselling
+- Admission guidance
+- Interactive voice responses
+
+---
+
+### 🔐 Authentication
+
+- User Registration
+- Secure Login
+- JWT Authentication
+- Protected Routes
+- User Sessions
+
+---
+
+### 🎓 College Portal
+
+- Hero Section
+- About College
+- Courses
+- Faculty
+- Student Life
+- Placement Statistics
+- Events Gallery
+- Recruiters
+- Mentors
+- Campus Information
+
+---
+
+### 📱 Responsive UI
+
+- Mobile Friendly
+- Modern Design
+- Tailwind CSS
+- React Components
+- Fast Loading
+
+---
+
+# 🏗 Architecture
+
+```
+                User
+                  │
+                  ▼
+         React + Vite Frontend
+                  │
+          Axios REST API Calls
+                  │
+                  ▼
+        Node.js + Express Backend
+                  │
+     ┌────────────┼─────────────┐
+     │            │             │
+     ▼            ▼             ▼
+ MongoDB      Gemini AI      Vapi AI
+ Atlas         Chatbot      Voice Calls
+```
 
 ---
 
@@ -25,340 +128,345 @@ The project combines **React**, **Node.js**, **MongoDB Atlas Vector Search**, **
 
 ## Frontend
 
-* React 19
-* TypeScript
-* Vite
-* Axios
-* Tailwind CSS
-* React Router
-* React Hot Toast
-* Lucide Icons
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Axios
+- React Router
+- Lucide Icons
+- React Hot Toast
+
+---
 
 ## Backend
 
-* Node.js
-* Express.js
-* TypeScript
-* JWT Authentication
-* MongoDB Atlas
-* Mongoose
+- Node.js
+- Express.js
+- TypeScript
+- JWT
+- MongoDB Atlas
+- Mongoose
 
-## AI Technologies
+---
 
-* Google Gemini API
-* LangChain
-* MongoDB Atlas Vector Search
-* Vapi AI (Voice Assistant)
+## AI
+
+- Google Gemini API
+- LangChain
+- RAG Architecture
+- Vapi AI Voice Assistant
+
+---
 
 ## Deployment
 
-* Vercel (Frontend)
-* Render (Backend)
-* MongoDB Atlas (Database)
+Frontend
+
+- Vercel
+
+Backend
+
+- Render
+
+Database
+
+- MongoDB Atlas
 
 ---
 
 # 📂 Project Structure
 
 ```
-edureach-platform/
+edureach-platform
 │
-├── client/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── context/
-│   │   ├── data/
-│   │   └── assets/
+├── client
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── context
+│   │   ├── data
+│   │   └── assets
 │   │
-│   ├── package.json
-│   └── vite.config.ts
+│   └── package.json
 │
-├── server/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── routes/
-│   │   ├── services/
-│   │   ├── middleware/
-│   │   ├── models/
-│   │   ├── utils/
-│   │   └── config/
+├── server
+│   ├── src
+│   │   ├── routes
+│   │   ├── controllers
+│   │   ├── middleware
+│   │   ├── models
+│   │   ├── services
+│   │   ├── utils
+│   │   └── config
 │   │
-│   ├── knowledge-base/
-│   ├── package.json
-│   └── server.ts
+│   └── package.json
 │
 └── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+# ⚙ Installation
 
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/edureach-platform.git
+git clone https://github.com/CambridgeinstitutetechnologyBLR-Dhanush/edureach-platform.git
+
 cd edureach-platform
 ```
 
 ---
 
-## Install Frontend
+## Backend
 
 ```bash
-cd client
+cd server
+
 npm install
+
+npm run dev
 ```
 
 ---
 
-## Install Backend
+## Frontend
 
 ```bash
-cd ../server
+cd client
+
 npm install
+
+npm run dev
 ```
 
 ---
 
 # 🔑 Environment Variables
 
-Create `.env` inside the **server** folder.
+## Backend (.env)
 
-```env
+```
 PORT=5000
 
-MONGODB_URI=YOUR_MONGODB_URI
+MONGODB_URI=
 
-JWT_SECRET=YOUR_SECRET
+JWT_SECRET=
 
 JWT_EXPIRES_IN=7d
 
 CLIENT_URL=http://localhost:5173
 
-GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+GOOGLE_API_KEY=
 
-VAPI_API_KEY=YOUR_VAPI_KEY
+VAPI_API_KEY=
 
-VAPI_ASSISTANT_ID=YOUR_ASSISTANT_ID
+VAPI_ASSISTANT_ID=
 
-VAPI_PHONE_NUMBER_ID=YOUR_PHONE_NUMBER_ID
-```
-
-Create `.env.production` inside the **client** folder.
-
-```env
-VITE_API_URL=https://YOUR_BACKEND_URL/api
+VAPI_PHONE_NUMBER_ID=
 ```
 
 ---
 
-# ▶️ Run Locally
-
-## Backend
-
-```bash
-cd server
-npm run dev
-```
-
-Backend runs at
+## Frontend (.env.production)
 
 ```
-http://localhost:5000
+VITE_API_URL=https://your-render-backend.onrender.com/api
 ```
 
 ---
 
-## Frontend
+# 📡 API Endpoints
 
-```bash
-cd client
-npm run dev
-```
-
-Frontend runs at
+## Authentication
 
 ```
-http://localhost:5173
-```
+POST /api/auth/register
 
----
+POST /api/auth/login
 
-# 🌐 Deployment
-
-## Frontend
-
-Deploy using **Vercel**
-
-Build Command
-
-```
-npm run build
-```
-
-Output Directory
-
-```
-dist
-```
-
-Root Directory
-
-```
-client
+GET /api/auth/me
 ```
 
 ---
 
-## Backend
-
-Deploy using **Render**
-
-Root Directory
+## AI Chat
 
 ```
-server
+POST /api/chat/message
 ```
 
-Build Command
+---
+
+## Voice Calling
 
 ```
-npm install
+POST /api/call
 ```
 
-Start Command
+---
+
+# 📷 Screenshots
+
+## Home Page
+
+(Add Screenshot)
+
+---
+
+## AI Chatbot
+
+(Add Screenshot)
+
+---
+
+## Voice Counselor
+
+(Add Screenshot)
+
+---
+
+## Login Page
+
+(Add Screenshot)
+
+---
+
+# 🔒 Authentication Flow
 
 ```
-npm start
+Register
+      │
+      ▼
+Generate JWT
+      │
+      ▼
+Store Token
+      │
+      ▼
+Protected Routes
+      │
+      ▼
+Authorized API Requests
 ```
-
-Configure all required environment variables in Render before deployment.
 
 ---
 
 # 🤖 AI Workflow
 
 ```
-User Question
-      │
-      ▼
-React Chat Interface
-      │
-      ▼
-Express Backend API
-      │
-      ▼
-LangChain RAG Pipeline
-      │
-      ▼
-MongoDB Atlas Vector Search
-      │
-      ▼
-Relevant Documents Retrieved
-      │
-      ▼
-Google Gemini
-      │
-      ▼
-Generated Answer
-      │
-      ▼
-Response to User
+Student Question
+
+       │
+
+       ▼
+
+React Chat Widget
+
+       │
+
+       ▼
+
+Express API
+
+       │
+
+       ▼
+
+Gemini AI + RAG
+
+       │
+
+       ▼
+
+AI Response
+
+       │
+
+       ▼
+
+Displayed to User
 ```
 
 ---
 
-# 🎙 Voice Assistant Workflow
+# 📞 Voice Workflow
 
 ```
-User Clicks "Talk to Us"
+Student
 
-        │
+   │
 
-        ▼
+   ▼
 
-Vapi AI Voice Assistant
+Call Request
 
-        │
+   │
 
-        ▼
+   ▼
 
-Speech Recognition
+Backend
 
-        │
+   │
 
-        ▼
+   ▼
 
-Google Gemini
+Vapi API
 
-        │
+   │
 
-        ▼
+   ▼
 
-Speech Synthesis
+AI Voice Assistant
 
-        │
+   │
 
-        ▼
+   ▼
 
-AI Voice Response
+Phone Conversation
 ```
 
 ---
 
-# 🔒 Authentication Flow
+# 🚀 Future Enhancements
 
-* User Registration
-* Password Hashing
-* JWT Token Generation
-* Secure Login
-* Protected Routes
-* Session Persistence
-
----
-
-# 📸 Screenshots
-
-You can include screenshots here:
-
-* Homepage
-* Login Page
-* Signup Page
-* AI Chatbot
-* Voice Assistant
-* Placement Section
+- Voice-to-Voice AI Chat
+- Student Dashboard
+- Admin Portal
+- Appointment Booking
+- WhatsApp Integration
+- Multilingual Support
+- PDF Admission Assistant
+- Email Automation
+- Analytics Dashboard
+- AI Recommendation System
 
 ---
 
-# 👨‍💻 Future Improvements
-
-* Multi-language support
-* Voice-to-Voice Conversation
-* Student Dashboard
-* Appointment Booking
-* Admin Panel
-* Analytics Dashboard
-* WhatsApp Integration
-* SMS Notifications
-* Email Automation
-
----
-
-# 📄 License
-
-This project is developed for educational and research purposes.
-
----
-
-# 👤 Author
+# 👨‍💻 Developer
 
 **Dhanush Kulkarni**
 
-Electronics & Communication Engineering (ECE)
+Electronics & Communication Engineering
 
 Cambridge Institute of Technology
 
-GitHub: https://github.com/CambridgeinstitutetechnologyBLR-Dhanush
+GitHub
+
+https://github.com/CambridgeinstitutetechnologyBLR-Dhanush
+
+---
+
+# ⭐ If you like this project
+
+Give this repository a ⭐ on GitHub.
+
+It motivates future development and improvements.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
